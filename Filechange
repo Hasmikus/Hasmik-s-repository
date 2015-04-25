@@ -1,0 +1,3 @@
+#!/bin/bash
+
+while read a ; do echo ${a//$1/$2} ; done < $3 > $3.t ; mv $3{.t,}

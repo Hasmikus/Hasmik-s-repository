@@ -1,19 +1,19 @@
-function c(val)
+function clear(val) //  This function clears the display.
 {
-document.getElementById("in1").value=val;
-}
-function v(val)
+document.getElementById("input1").value=val;
+} 
+function value(val) // Adding onclick values on current value.
 {
-document.getElementById("in1").value+=val;
+document.getElementById("input1").value+=val;
 }
-function e() 
+function e() // Result of finished numeric functions. If there are errors type 'Error'.
 { 
 	try 
 	{ 
-	  c(eval(document.getElementById("in1").value)) 
+	  c(eval(document.getElementById("input1").value)) 
 	} 
 	catch(e) 
 	{
-	  c('Error') 
+	  clear('Error') 
 	} 
 }

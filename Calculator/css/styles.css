@@ -43,6 +43,7 @@ body {
 	border-radius:8px;
 	font-size:32px;
 	text-align:right;
+	color: black;
 }
 #function_buttons_box {
 	width:350px;
@@ -50,7 +51,7 @@ body {
 	background:#5C5F68;
 	position:relative;
 	left:-76px;
-	top:-40px;
+	top:-60px;
 	border-radius:8px;
 	box-shadow: 3px 3px 5px 0px #5F5F5F;
 }
@@ -72,10 +73,11 @@ body {
 	vertical-align: bottom;
 	text-shadow:0px 1px 0px #292626;
 	position:relative;
-	top:20px;
+	top:0px;
 	left:5px;
 	bottom:10px;
-	width:50px;
+	width:30px;
+	height:45px;
 	
 }
 .Button:hover {
@@ -103,7 +105,7 @@ body {
 	background:linear-gradient(to bottom, #4d5459 5%, #1f1f24 100%);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4d5459', endColorstr='#1f1f24',GradientType=0);
 	background-color:#4d5459;
-	border-radius:40px;
+	border-radius:50px;
 	border:1px solid #575c61;
 	display:block;
 	vertical-align:middle;
@@ -116,9 +118,10 @@ body {
 	text-shadow:0px 1px 0px #292626;
 	text-align:center;
 	position: relative;
-	top:-230px;
+	top:-300px;
 	left:290px;
-	width:50px;
+	width:45px;
+	height:45px;
 
 }
 .circleButton:hover {
@@ -129,6 +132,9 @@ body {
 .circleButton:active {
 	position:relative;
 	top:1px;
+}
+#in1 {
+	color:black;
 }
 
 

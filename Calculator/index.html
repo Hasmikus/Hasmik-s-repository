@@ -3,7 +3,7 @@
  <title> My Calculator </title>
  
  <link rel="stylesheet" type="text/css" href=".\css\styles.css" media="screen" />
- <script src="..\js\script.js"> </script>
+ <script src=".\js\script.js"> </script>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
 	 <p>
 		<input type="button" class="Button" onclick='clear(" ")' value="C">
 		<input type="button" class="Button" onclick='clear(" ")' value="ON"> 
-		<input type="button" class="Button"  value="MC">
+		<input type="button" class="Button"  value="MC" onclick='clear(" ")'>
 	 </p>
 	 <p>	
 		<input type="button" class="Button" onclick='value("1")' value="1">
@@ -32,14 +32,14 @@
 		<input type="button" class="Button" onclick='value("6")' value="6">
 	 </p>
 	 <p>
-		<input type="button" class="Button" onclick='value("7")' value="7">
+		<input type="button" class="Button" value="7" onclick='value("7")'>
 		<input type="button" class="Button" onclick='value("8")' value="8">
 		<input type="button" class="Button" onclick='value("9")' value="9">
 	 </p>
 	 <p>
 		<input type="button" class="Button" onclick='value("0")' value="0">
 		<input type="button" class="Button" onclick='value(".")' value=".">
-		<input type="button" class="Button" onclick="execute();" value="=">
+		<input type="button" class="Button" onclick='execute()' value="=">
 	 </p>
 		<p><input type="button" class="circleButton" value="+" onclick='value("+")'></p>
 		<p><input type="button" class="circleButton" value="-" onclick='value("-")'></p>

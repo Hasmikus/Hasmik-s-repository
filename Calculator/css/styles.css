@@ -89,16 +89,7 @@ body {
 	position:relative;
 	top:50px;
 }
-#button_1 {
-	position:relative;
-	left:5px;
-}
 
-#button_2 {
-	position:relative;
-	left:5px;
-	top:60px;
-}
 .circleButton {
 	box-shadow: 3px 4px 0px 1px #575c61;
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #4d5459), color-stop(1, #1f1f24));
@@ -133,6 +124,7 @@ body {
 	position:relative;
 	top:1px;
 }
+
 #input1 {
 	color:black;
 }

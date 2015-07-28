@@ -33,6 +33,7 @@ body {
 	top:10px;
 	border-radius:8px;
 	box-shadow: 0px 0px 10px 5px #888888;
+	display:block;
 }
 #white_input_box input {
 	width:300px;
@@ -44,7 +45,9 @@ body {
 	font-size:32px;
 	text-align:right;
 	color: black;
+	display:block;
 }
+
 #function_buttons_box {
 	width:350px;
 	height:300px;
@@ -125,9 +128,7 @@ body {
 	top:1px;
 }
 
-#input1 {
-	color:black;
-}
+
 
 
 	

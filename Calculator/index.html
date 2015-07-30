@@ -1,7 +1,8 @@
+<!Doctype html>
 <html> 
 <head>
  <title> My Calculator </title>
- <link rel="stylesheet" type="text/css" href=".\css\styles.css" media="screen" />
+ <link rel="stylesheet" type="text/css" href=".\css\styles.css" media="screen" /> 
  <script  type="text/javascript" src=".\js\script.js"></script>	
 </head>
 
@@ -10,20 +11,20 @@
 <div id="main_body">
 	<div id="input_box">
 	 <div id="white_input_box">
-		<input type="text" name="funct_space" value=" " readOnly />
+		<input type="text" name="funct_space" value=" " id="input_id" readOnly />
 	 </div>
 	</div>
 
 	<div id="function_buttons_box">
 	 <p>
-		<input type="button" class="Button" onclick='clear(" "); ' value="C" />
-		<input type="button" class="Button" onclick='clear(" "); ' value="ON" /> 
-		<input type="button" class="Button" onclick='clear(" "); 'value="MC" />
+		<input type="button" class="Button" onclick="clearing(' ');" value="C" />
+		<input type="button" class="Button" onclick="clearing(' ');" value="ON" /> 
+		<input type="button" class="Button" onclick="clearing(' ');" value="MC" />
 	 </p>
 	 <p>	
-		<input type="button" class="Button" onclick='adding_value("1");' value="1" />
-		<input type="button" class="Button" onclick='adding_value("2");' value="2" />
-		<input type="button" class="Button" onclick='adding_value("3");' value="3" /> 
+		<input type="button" class="Button" onclick="adding_value('1');" value="1" />
+		<input type="button" class="Button" onclick="adding_value('2');" value="2" />
+		<input type="button" class="Button" onclick="adding_value('3');" value="3" /> 
 	 </p>
 	 <p>
 		<input type="button" class="Button" onclick="adding_value('4');" value="4" />
@@ -38,7 +39,7 @@
 	 <p>
 		<input type="button" class="Button" onclick="adding_value('0');" value="0" />
 		<input type="button" class="Button" onclick="adding_value('.');" value="." />
-		<input type="button" class="Button" onclick="execute();" value="=" />
+		<input type="button" class="Button" onclick="execute_result();" value="=" />
 	 </p>
 		<p><input type="button" class="circleButton" value="+" onclick="adding_value('+');" /></p>
 		<p><input type="button" class="circleButton" value="-" onclick="adding_value('-');" /></p>

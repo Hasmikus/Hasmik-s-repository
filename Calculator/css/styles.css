@@ -1,11 +1,6 @@
-body {
-	overflow: none;
-}
+
 #main_body {
-	padding-top:80px;
-	padding-left:80px;
-	padding-bottom:80px;
-	padding-right:80px;
+	padding:80px 80px 80px 80px;
 	width:200px;
 	height:300px;
 	background:#1F1E24;
@@ -38,15 +33,14 @@ body {
 #white_input_box input {
 	width:300px;
 	height:60px;
-	position:relative;
+	position:absolute;
 	left:8px;
 	top:10px;
 	border-radius:8px;
-	font-size:32px;
+	font-size:28px;
 	text-align:right;
-	color: black;
 	display:block;
-}
+} 
 
 #function_buttons_box {
 	width:350px;
@@ -90,12 +84,11 @@ body {
 }
 .Button:active {
 	position:relative;
-	top:50px;
-}
+	top:-10px;
+} 
 
 .circleButton {
 	box-shadow: 3px 4px 0px 1px #575c61;
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #4d5459), color-stop(1, #1f1f24));
 	background:linear-gradient(to bottom, #4d5459 5%, #1f1f24 100%);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4d5459', endColorstr='#1f1f24',GradientType=0);
 	background-color:#4d5459;
@@ -125,7 +118,7 @@ body {
 }
 .circleButton:active {
 	position:relative;
-	top:1px;
+	top:-300px;
 }
 
 

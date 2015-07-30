@@ -1,56 +1,17 @@
+<!Doctype  html>
 <html>
 <head>
 <title> Spiral </title>
+<script type="text/javascript" src=".\js\myscript.js"> </script>
 </head>
 <body>
 
-<canvas id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3;">
+<canvas id="myCanvas" width="500" height="500" style="border:1px solid #d3d3d3;">
 Your browser does not support the HTML5 canvas tag.</canvas>
-<form action="demo_form.asp">
-Width: <input type="number" name="Width" value=" "><br>
-Height: <input type="number" name="Height" value=" "><br>
-<input type="submit" value="Submit" onclick = "spiral();" >
-</form>
-<script type="text/javascript">
-function spiral () {
-   m = document.getElementsByName("Width").value / 10;
-   n = document.getElementsByName("Height").value / 10;
-   x = document.getElementsByName("Width").value;
-   y = document.getElementsByName("Height").value;
-   d=-10;
-  var c = document.getElementById("myCanvas");
-  var ctx = c.getContext("2d");
-  while (m * n != 1) {
-    for (var i = 1; i < m; i++) {
-		ctx.beginPath();
-		ctx.moveTo(x, y);
-		ctx.lineTo(x-10, y);
-		ctx.lineTo(x-10, y-10);
-		ctx.lineTo(x, y-10);
-		ctx.lineTo(x, y);
-		x+=d;
-		ctx.moveTo(x, y);
-		ctx.stroke();
-    }
-	for (var j = 1; j < n-1; j++) {
-		ctx.beginPath();
-		ctx.moveTo(x, y);
-		ctx.lineTo(x-10, y);
-		ctx.lineTo(x-10, y-10);
-		ctx.lineTo(x, y-10);
-		ctx.lineTo(x, y);
-		y+=d;
-		ctx.moveTo(x, y);
-		ctx.stroke();
-	}
-    m--;
-    n--;
-    d*=-1;
+<label> Width: </label> <input type="number" id="width"/>
+<label> Height: </label> <input type="number" id="height"/>
+<button type="submit" name="submit_button" onclick='spiral_drawing();'> Submit </button>
 
-	}
-}
-
-</script>
 
 
 </body>
